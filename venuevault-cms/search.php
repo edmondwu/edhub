@@ -2,29 +2,114 @@
 require_once("includes/functions.php");
 include("includes/header.php"); ?>
 
-			<table id="structure">
-				<tr>
-					<td id="navigation">
-						
-					</td>
+			
+			<div id="content-wrapper">
+				
+				<div id="featured">
 					
-					<td id="page">
-						<h2>STAFF MENU</h2>
-						<p>Welcome to the staff area</p>
-						<ul>
-							<li>
-								<a href="content.php">Manage Website</a>
-							</li>
-							<li>
-								<a href="new-user.php">Add Staff User</a>
-							</li>
-							<li>
-								<a href="logout.php">Logout</a>
-							</li>
-						</ul>
-					</td>
-				</tr>
-			</table>
+					<ul>
+						<li>
+							<h3></h3>
+							<p></p>
+							<p class="capacity"></p>
+							<p class="price"></p>
+						</li>
+						<li>
+							<h3></h3>
+							<p></p>
+							<p class="capacity"></p>
+							<p class="price"></p>
+						</li>
+						<li>
+							<h3></h3>
+							<p></p>
+							<p class="capacity"></p>
+							<p class="price"></p>
+						</li>
+					</ul>
+					
+				</div>
+				
+				<div  id="search-body" >
+				  
+				  <div id="sidebar">Search Box</div>
+				  <div id="search-grid">
+				  	
+				  	<ul>
+				  		<li>
+				  			<img src="http://www.placehold.it/120x80" alt="grid image" />	
+				  			<h3></h3>
+				  			<p></p>
+				  			<p class="capacity"></p>
+				  			<p class="price"></p>
+				  		</li>
+				  		<li>
+				  			<img src="http://www.placehold.it/120x80" alt="grid image" />	
+				  			<h3></h3>
+				  			<p></p>
+				  			<p class="capacity"></p>
+				  			<p class="price"></p>
+				  		</li>
+				  		<li>
+				  			<img src="http://www.placehold.it/120x80" alt="grid image" />	
+				  			<h3></h3>
+				  			<p></p>
+				  			<p class="capacity"></p>
+				  			<p class="price"></p>
+				  		</li>
+				  		<li>
+				  			<img src="http://www.placehold.it/120x80" alt="grid image" />	
+				  			<h3></h3>
+				  			<p></p>
+				  			<p class="capacity"></p>
+				  			<p class="price"></p>
+				  		</li>
+				  		<li>
+				  			<img src="http://www.placehold.it/120x80" alt="grid image" />	
+				  			<h3></h3>
+				  			<p></p>
+				  			<p class="capacity"></p>
+				  			<p class="price"></p>
+				  		</li>
+				  		<li>
+				  			<img src="http://www.placehold.it/120x80" alt="grid image" />	
+				  			<h3></h3>
+				  			<p></p>
+				  			<p class="capacity"></p>
+				  			<p class="price"></p>
+				  		</li>
+				  		<li>
+				  			<img src="http://www.placehold.it/120x80" alt="grid image" />	
+				  			<h3></h3>
+				  			<p></p>
+				  			<p class="capacity"></p>
+				  			<p class="price"></p>
+				  		</li>
+				  		<li>
+				  			<img src="http://www.placehold.it/120x80" alt="grid image" />	
+				  			<h3></h3>
+				  			<p></p>
+				  			<p class="capacity"></p>
+				  			<p class="price"></p>
+				  		</li>
+				  		<li>
+				  			<img src="http://www.placehold.it/120x80" alt="grid image" />	
+				  			<h3></h3>
+				  			<p></p>
+				  			<p class="capacity"></p>
+				  			<p class="price"></p>
+				  		</li>
+				  	</ul>
+				  	
+				  	
+				  </div>
+				  
+				  
+				  
+				</div>
+				
+			</div>
+			
 		</div>
 		
 		<?php 
