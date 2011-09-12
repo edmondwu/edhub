@@ -1,0 +1,229 @@
+/**
+* @file
+* Page Styling
+*
+* Style the markup found in page.tpl.php. Also includes some styling of
+* miscellaneous Drupal elements that appear in the $content variable, such as
+* ul.links, .pager, .more-link, etc.
+
+
+* Body
+ */
+BODY
+{
+	margin: 0;
+	padding: 0;
+}
+#page-wrapper
+{
+}
+#page
+{
+}
+/*
+* The skip-link link will be completely hidden until a user tabs to the link.
+* See the element-focusable rule in system.base.css.
+ */
+#skip-link A, #skip-link A:visited
+{
+	display: block;
+	width: 100%;
+	padding: 2px 0 3px;
+	text-align: center;
+	background-color: #666;
+	color: #FFF;
+}
+/*
+* Header
+ */
+#header
+{
+}
+#header .section
+{
+}
+#logo
+{
+	float: left;
+/*LTR*/
+	margin: 0;
+	padding: 0;
+}
+#logo IMG
+{
+	vertical-align: bottom;
+	margin: 10px 0 10px 10px;
+}
+#name-and-slogan
+{
+	float: left;
+}
+H1#site-name, DIV#site-name
+{
+	margin: 0;
+	font-size: 2em;
+	line-height: 1.5em;
+}
+#site-name A:link, #site-name A:visited
+{
+	color: #000;
+	text-decoration: none;
+}
+#site-name A:hover, #site-name A:focus
+{
+	text-decoration: underline;
+}
+#site-slogan
+{
+}
+.region-header
+{
+	clear: both;
+/*Clear the logo*/
+}
+/*
+* Main (container for everything else)
+ */
+#main-wrapper
+{
+}
+#main
+{
+}
+/*
+* Content
+ */
+#content
+{
+}
+#content .section
+{
+}
+.region-highlighted
+{
+}
+.breadcrumb
+{
+	padding-bottom: 0;
+/*Undo system.css*/
+}
+H1.title, H2.node-title, H2.block-title, H2.title, H2.comment-form, H3.title
+{
+	margin: 0;
+}
+TR.even
+{
+/*background-color: #eee;
+Drupal core uses a #eee background*/
+}
+TR.odd
+{
+/*background-color: #eee;
+Drupal core uses a #eee background*/
+}
+DIV.messages
+{
+	margin: 1.5em 0;
+/*Drupal core uses "6px 0" margin*/
+}
+DIV.messages UL
+{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+DIV.status
+{
+}
+DIV.warning, TR.warning
+{
+/*border: 1px solid #f0c020;
+Drupal core uses: 1px solid #f0c020*/
+}
+DIV.error, TR.error
+{
+}
+.error
+{
+/*color: #e55;
+Drupal core uses a #e55 background*/
+}
+.warning
+{
+/*color: #e09010;
+Drupal core uses a #e09010 background*/
+}
+DIV.tabs
+{
+}
+.region-help
+{
+}
+.more-help-link
+{
+}
+.region-content
+{
+}
+UL.links
+{
+}
+UL.links.inline
+{
+	display: block;
+/*Let the links be inline, but the container be a block.*/
+}
+UL.links LI
+{
+	padding: 0 1em 0 0;
+/*LTR*/
+}
+.item-list .pager
+{
+	padding: 0;
+}
+.item-list .pager LI
+{
+	padding: 0 0.5em;
+}
+.feed-icon
+{
+}
+.more-link
+{
+}
+/*
+* First sidebar (on left in LTR languages, on right in RTL)
+*
+* Remember to NOT add padding or margin to your .region-sidebar-first
+* (see the layout.css file.)
+ */
+.region-sidebar-first
+{
+}
+.region-sidebar-first .section
+{
+}
+/*
+* Second sidebar (on right in LTR languages, on left in RTL)
+*
+* Remember to NOT add padding or margin to your .region-sidebar-second
+* (see the layout.css file.)
+ */
+.region-sidebar-second
+{
+}
+.region-sidebar-second .section
+{
+}
+/*
+* Footer
+ */
+.region-footer
+{
+}
+/*
+* Page bottom
+ */
+.region-bottom
+{
+}

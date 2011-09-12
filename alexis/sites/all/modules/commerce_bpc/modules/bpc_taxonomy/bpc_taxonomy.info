@@ -1,0 +1,11 @@
+name = Commerce bulk product creation - Taxonomy reference integration
+description = Allows taxonomy reference fields to be used to create combinations during bulk creation
+package = Commerce (contrib)
+core = 7.x
+dependencies[] = commerce_bpc
+; Information added by drupal.org packaging script on 2011-08-30
+version = "7.x-1.0-beta2"
+core = "7.x"
+project = "commerce_bpc"
+datestamp = "1314680218"
+

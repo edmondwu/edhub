@@ -1,0 +1,16 @@
+<?php
+/**
+ * @file
+ * (Un)Install hook implementations for the Commerce Bulk product creation
+ * module.
+ */
+/**
+ * Implements hook_uninstall().
+ */
+function commerce_bpc_uninstall() {
+  // Clean up variables
+  $result = db_query("SELECT name FROM {variable} WHERE name LIKE 'commerce_bpc_%'");
+  while ($var_name = $result->fetchField()) {
+    variable_del($var_name);
+  }
+}
