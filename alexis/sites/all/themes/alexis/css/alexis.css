@@ -35,7 +35,7 @@ SIDEBAR*/
 	color: #1F1C1C;
 	font-size: 11px;
 	padding: 2px 0 2px 10px;
-	width: 167px;
+	width: 172px;
 	display: block;
 }
 #block-menu-menu-product-menu.block UL.menu LI A
@@ -47,8 +47,13 @@ SIDEBAR*/
 	color: #1F1C1C;
 	font-size: 11px;
 	padding: 2px 0 2px 10px;
-	width: 177px;
+	width: 182px;
 	display: block;
+}
+#block-menu-menu-product-menu.block UL.menu LI A:HOVER
+{
+	background: #F90303;
+	color: #FFFFFF;
 }
 #block-menu-menu-product-menu.block UL.menu LI
 {
@@ -139,10 +144,10 @@ SIDEBAR*/
 	background: url(./../images/title-bg.png) repeat-x;
 	height: 37px;
 	color: #FFFFFF;
-	padding: 5px 0 0 20px;
+	padding: 5px 0 0 10px;
 	text-transform: uppercase;
-	margin: 7px;
-	width: 695px;
+	margin: 0;
+	width: 700px;
 }
 #page #main
 {
@@ -164,6 +169,8 @@ SIDEBAR*/
 	-o-box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.3);
 	box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.3);
 	min-height: 500px;
+	padding: 20px 20px 50px;
+	width: 706px;
 }
 #page #main .region-sidebar-first
 {
@@ -260,13 +267,23 @@ SIDEBAR*/
 	text-align: center;
 	padding: 5px 0 0;
 	text-transform: uppercase;
-	width: 200px;
+	width: 205px;
+}
+.region-sidebar-first #block-commerce-cart-cart .cart-empty-block
+{
+	padding: 30px 10px;
+	font-size: 12px;
 }
 .region-sidebar-first #block-commerce-cart-cart .line-item-summary
 {
-	padding: 0 10px 10px;
-	background: #EFEFEF;
-	color: #312929;
+	padding: 10px;
+	background: #F1F1F2;
+	color: #343030;
+	font-size: 12px;
+}
+.region-sidebar-first #block-commerce-cart-cart .line-item-quantity
+{
+	margin: 0 0 0 5px;
 }
 .region-sidebar-first #block-commerce-cart-cart TABLE TR
 {
@@ -303,4 +320,84 @@ SIDEBAR*/
 	background: #F60101;
 	color: #FFFFFF;
 	padding: 5px;
+}
+/*ADMIN PAGE*/
+.page-user #content .region-content
+{
+	width: 690px;
+	margin: 0 0 0 20px;
+}
+#user-login INPUT.form-submit
+{
+	background: #F20101;
+	border: none;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	padding: 5px 20px;
+	font-size: 15px;
+}
+/*CART PAGE*/
+.page-cart .view-commerce-cart-form .views-table
+{
+	width: 710px;
+}
+.page-cart .commerce-line-item-views-form THEAD
+{
+	border: none;
+	color: #5B5456;
+	text-transform: uppercase;
+}
+.page-cart .commerce-line-item-views-form THEAD .views-field
+{
+	padding: 0 0 9px;
+	border: none;
+}
+.page-cart .view-commerce-cart-form .views-table TR.odd
+{
+	background: #FCFCFC none;
+	/*[empty]border:;*/
+	height: 38px;
+}
+.page-cart .view-commerce-cart-form .views-table TR.even
+{
+	background: #EAE9E9 none;
+	/*[empty]border:;*/
+	height: 38px;
+}
+.page-cart .commerce-line-item-views-form TABLE.views-table.cols-5 THEAD TR TH
+{
+	border: none;
+}
+.page-cart .commerce-line-item-views-form TABLE .odd .views-field, .page-cart .commerce-line-item-views-form TABLE.views-table.cols-5
+{
+	padding: 7px 5px 0;
+}
+.page-cart .commerce-line-item-views-form TABLE .even .views-field, .page-cart .commerce-line-item-views-form TABLE.views-table.cols-5
+{
+	padding: 7px 5px 0;
+}
+.page-cart .commerce-line-item-views-form INPUT.form-text
+{
+	padding: 4px 0 0 4px;
+	text-align: center;
+	margin: 4px 0 0 4px;
+}
+.page-cart .commerce-line-item-views-form INPUT.delete-line-item.form-submit
+{
+	background: #CBC9C9;
+	border: none;
+	padding: 5px;
+	margin: -5px 0 0;
+}
+.page-cart .view-commerce-cart-form .views-table TABLE
+{
+	border: none;
+}
+.page-cart .commerce-line-item-views-form .commerce-line-item-actions INPUT.form-submit
+{
+	background: #F32C2C;
+	border: none;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	padding: 5px 10px;
 }
