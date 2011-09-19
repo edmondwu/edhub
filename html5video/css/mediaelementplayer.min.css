@@ -1,0 +1,550 @@
+.mejs-container
+{
+	position: relative;
+	background: #000;
+	font-family: Helvetica, Arial;
+}
+.mejs-container-fullscreen
+{
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	overflow: hidden;
+}
+.mejs-container-fullscreen .mejs-mediaelement, .mejs-container-fullscreen VIDEO
+{
+	width: 100%;
+	height: 100%;
+}
+.mejs-background
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.mejs-mediaelement
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.mejs-poster
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.mejs-overlay
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.mejs-overlay-play
+{
+	cursor: pointer;
+}
+.mejs-overlay-button
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 100px;
+	height: 100px;
+	margin: -50px 0 0 -50px;
+	background: url(./../images/bigplay.png) no-repeat top left;
+}
+.mejs-overlay:hover .mejs-overlay-button
+{
+	background-position: 0 -100px;
+}
+.mejs-overlay-loading
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 80px;
+	height: 80px;
+	margin: -40px 0 0 -40px;
+	background: #333;
+	background: url(./../images/background.png);
+	background: rgba(0, 0, 0, 0.9);
+	background: -webkit-gradient(linear,left top,left bottom,from(rgba(50,50,50,0.9)),to(rgba(0,0,0,0.9)));
+	background: -moz-linear-gradient(top,rgba(50,50,50,0.9),rgba(0,0,0,0.9));
+	background: rgba(0, 0, 0, 0.9) url(./../images/linear-gradient(rgba(50,50,50,0.9) url()));
+}
+.mejs-overlay-loading SPAN
+{
+	display: block;
+	width: 80px;
+	height: 80px;
+	background: transparent url(./../loading.gif) no-repeat center center;
+}
+.mejs-container .mejs-controls
+{
+	position: absolute;
+	background: none;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	bottom: 0;
+	left: 0;
+	background: url(./../images/background.png);
+	background: rgba(0, 0, 0, 0.7);
+	background: -webkit-gradient(linear,left top,left bottom,from(rgba(50,50,50,0.7)),to(rgba(0,0,0,0.7)));
+	background: -moz-linear-gradient(top,rgba(50,50,50,0.7),rgba(0,0,0,0.7));
+	background: rgba(0, 0, 0, 0.7) url(./../images/linear-gradient(rgba(50,50,50,0.7) url()));
+	height: 30px;
+	width: 100%;
+}
+.mejs-container .mejs-controls DIV
+{
+	list-style-type: none;
+	background-image: none;
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 0;
+	width: 26px;
+	height: 26px;
+	font-size: 11px;
+	line-height: 11px;
+	background: 0;
+	font-family: Helvetica, Arial;
+	border: 0;
+}
+.mejs-controls .mejs-button BUTTON
+{
+	cursor: pointer;
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	text-decoration: none;
+	margin: 7px 5px;
+	padding: 0;
+	position: absolute;
+	height: 16px;
+	width: 16px;
+	border: 0;
+	background: transparent url(./../images/controls.png) no-repeat 0 0;
+}
+.mejs-container .mejs-controls .mejs-time
+{
+	color: #FFF;
+	display: block;
+	height: 17px;
+	width: auto;
+	padding: 8px 3px 0;
+	overflow: hidden;
+	text-align: center;
+	padding: 0 4px;
+}
+.mejs-container .mejs-controls .mejs-time SPAN
+{
+	font-size: 11px;
+	color: #FFF;
+	line-height: 12px;
+	display: block;
+	float: left;
+	margin: 1px 2px 0 0;
+	width: auto;
+}
+.mejs-controls .mejs-play BUTTON
+{
+	background-position: 0 0;
+}
+.mejs-controls .mejs-pause BUTTON
+{
+	background-position: 0 -16px;
+}
+.mejs-controls .mejs-stop BUTTON
+{
+	background-position: -112px 0;
+}
+.mejs-controls DIV.mejs-time-rail
+{
+	width: 200px;
+	padding-top: 5px;
+}
+.mejs-controls .mejs-time-rail SPAN
+{
+	display: block;
+	position: absolute;
+	width: 180px;
+	height: 10px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	cursor: pointer;
+}
+.mejs-controls .mejs-time-rail .mejs-time-total
+{
+	margin: 5px;
+	background: #333;
+	background: rgba(50, 50, 50, 0.8);
+	background: -webkit-gradient(linear,left top,left bottom,from(rgba(30,30,30,0.8)),to(rgba(60,60,60,0.8)));
+	background: -moz-linear-gradient(top,rgba(30,30,30,0.8),rgba(60,60,60,0.8));
+	background: rgba(60, 60, 60, 0.8) url(./../images/linear-gradient(rgba(30,30,30,0.8) url()));
+	filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,startColorstr=#1E1E1E,endColorstr=#3C3C3C);
+}
+.mejs-controls .mejs-time-rail .mejs-time-loaded
+{
+	background: #3CAAC8;
+	background: rgba(60, 170, 200, 0.8);
+	background: -webkit-gradient(linear,left top,left bottom,from(rgba(44,124,145,0.8)),to(rgba(78,183,212,0.8)));
+	background: -moz-linear-gradient(top,rgba(44,124,145,0.8),rgba(78,183,212,0.8));
+	background: rgba(78, 183, 212, 0.8) url(./../images/linear-gradient(rgba(44,124,145,0.8) url()));
+	filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,startColorstr=#2C7C91,endColorstr=#4EB7D4);
+	width: 0;
+}
+.mejs-controls .mejs-time-rail .mejs-time-current
+{
+	width: 0;
+	background: #FFF;
+	background: rgba(255, 255, 255, 0.8);
+	background: -webkit-gradient(linear,left top,left bottom,from(rgba(255,255,255,0.9)),to(rgba(200,200,200,0.8)));
+	background: -moz-linear-gradient(top,rgba(255,255,255,0.9),rgba(200,200,200,0.8));
+	filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,startColorstr=#FFFFFF,endColorstr=#C8C8C8);
+}
+.mejs-controls .mejs-time-rail .mejs-time-handle
+{
+	display: none;
+	position: absolute;
+	margin: 0;
+	width: 10px;
+	background: #FFF;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	cursor: pointer;
+	border: 2px solid #333;
+	top: -2px;
+	text-align: center;
+}
+.mejs-controls .mejs-time-rail .mejs-time-float
+{
+	visibility: hidden;
+	position: absolute;
+	display: block;
+	background: #EEE;
+	width: 36px;
+	height: 17px;
+	border: 1px solid #333;
+	top: -26px;
+	margin-left: -18px;
+	text-align: center;
+	color: #111;
+}
+.mejs-controls .mejs-time-rail:hover .mejs-time-float
+{
+	visibility: visible;
+}
+.mejs-controls .mejs-time-rail .mejs-time-float-current
+{
+	margin: 2px;
+	width: 30px;
+	display: block;
+	text-align: center;
+	left: 0;
+}
+.mejs-controls .mejs-time-rail .mejs-time-float-corner
+{
+	position: absolute;
+	display: block;
+	width: 0;
+	height: 0;
+	line-height: 0;
+	border: 5px solid #EEE;
+	border-color: #EEE transparent transparent;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	top: 15px;
+	left: 13px;
+}
+.mejs-controls .mejs-fullscreen-button BUTTON
+{
+	background-position: -32px 0;
+}
+.mejs-controls .mejs-unfullscreen BUTTON
+{
+	background-position: -32px -16px;
+}
+.mejs-controls .mejs-mute BUTTON
+{
+	background-position: -16px -16px;
+}
+.mejs-controls .mejs-unmute BUTTON
+{
+	background-position: -16px 0;
+}
+.mejs-controls .mejs-volume-button
+{
+	position: relative;
+}
+.mejs-controls .mejs-volume-button .mejs-volume-slider
+{
+	display: none;
+	height: 115px;
+	width: 25px;
+	background: url(./../images/background.png);
+	background: rgba(50, 50, 50, 0.7);
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	top: -115px;
+	left: 0;
+	z-index: 1;
+	position: absolute;
+	margin: 0;
+}
+.mejs-images .mejs-volume-button:hover
+{
+	-webkit-border-radius: 0 0 4px 4px;
+	-moz-border-radius: 0 0 4px 4px;
+	border-radius: 0 0 4px 4px;
+}
+.mejs-controls .mejs-volume-button:hover .mejs-volume-slider
+{
+	display: block;
+}
+.mejs-controls .mejs-volume-button .mejs-volume-slider .mejs-volume-total
+{
+	position: absolute;
+	left: 11px;
+	top: 8px;
+	width: 2px;
+	height: 100px;
+	background: #DDD;
+	background: rgba(255, 255, 255, 0.5);
+	margin: 0;
+}
+.mejs-controls .mejs-volume-button .mejs-volume-slider .mejs-volume-current
+{
+	position: absolute;
+	left: 11px;
+	top: 8px;
+	width: 2px;
+	height: 100px;
+	background: #DDD;
+	background: rgba(255, 255, 255, 0.9);
+	margin: 0;
+}
+.mejs-controls .mejs-volume-button .mejs-volume-slider .mejs-volume-handle
+{
+	position: absolute;
+	left: 4px;
+	top: -3px;
+	width: 16px;
+	height: 6px;
+	background: #DDD;
+	background: rgba(255, 255, 255, 0.9);
+	cursor: n-resize;
+	-webkit-border-radius: 1px;
+	-moz-border-radius: 1px;
+	border-radius: 1px;
+	margin: 0;
+}
+.mejs-controls .mejs-captions-button
+{
+	position: relative;
+}
+.mejs-controls .mejs-captions-button BUTTON
+{
+	background-position: -48px 0;
+}
+.mejs-controls .mejs-captions-button .mejs-captions-selector
+{
+	visibility: hidden;
+	position: absolute;
+	bottom: 26px;
+	right: -10px;
+	width: 130px;
+	height: 100px;
+	background: url(./../images/background.png);
+	background: rgba(50, 50, 50, 0.7);
+	border: 1px solid transparent;
+	padding: 10px;
+	overflow: hidden;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+}
+.mejs-controls .mejs-captions-button:hover .mejs-captions-selector
+{
+	visibility: visible;
+}
+.mejs-controls .mejs-captions-button .mejs-captions-selector UL
+{
+	margin: 0;
+	padding: 0;
+	display: block;
+	list-style-type: none !important;
+	overflow: hidden;
+}
+.mejs-controls .mejs-captions-button .mejs-captions-selector UL LI
+{
+	margin: 0 0 6px;
+	padding: 0;
+	list-style-type: none !important;
+	display: block;
+	color: #FFF;
+	overflow: hidden;
+}
+.mejs-controls .mejs-captions-button .mejs-captions-selector UL LI INPUT
+{
+	clear: both;
+	float: left;
+	margin: 3px 3px 0 5px;
+}
+.mejs-controls .mejs-captions-button .mejs-captions-selector UL LI LABEL
+{
+	width: 100px;
+	float: left;
+	padding: 4px 0 0;
+	line-height: 15px;
+	font-family: helvetica, arial;
+	font-size: 10px;
+}
+.mejs-controls .mejs-captions-button .mejs-captions-translations
+{
+	font-size: 10px;
+	margin: 0 0 5px;
+}
+.mejs-chapters
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-right: solid 1px #fff;
+	width: 10000px;
+}
+.mejs-chapters .mejs-chapter
+{
+	position: absolute;
+	float: left;
+	background: #222;
+	background: rgba(0, 0, 0, 0.7);
+	background: -webkit-gradient(linear,left top,left bottom,from(rgba(50,50,50,0.7)),to(rgba(0,0,0,0.7)));
+	background: -moz-linear-gradient(top,rgba(50,50,50,0.7),rgba(0,0,0,0.7));
+	background: rgba(0, 0, 0, 0.7) url(./../images/linear-gradient(rgba(50,50,50,0.7) url()));
+	filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,startColorstr=#323232,endColorstr=#000000);
+	overflow: hidden;
+	border: 0;
+}
+.mejs-chapters .mejs-chapter .mejs-chapter-block
+{
+	font-size: 11px;
+	color: #FFF;
+	padding: 5px;
+	display: block;
+	border-right: 1px solid #333;
+	border-bottom: 1px solid #333;
+	cursor: pointer;
+}
+.mejs-chapters .mejs-chapter .mejs-chapter-block-last
+{
+	border-right: none;
+}
+.mejs-chapters .mejs-chapter .mejs-chapter-block:hover
+{
+	background: #666;
+	background: rgba(102, 102, 102, 0.7);
+	background: -webkit-gradient(linear,left top,left bottom,from(rgba(102,102,102,0.7)),to(rgba(50,50,50,0.6)));
+	background: -moz-linear-gradient(top,rgba(102,102,102,0.7),rgba(50,50,50,0.6));
+	filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,startColorstr=#666666,endColorstr=#323232);
+}
+.mejs-chapters .mejs-chapter .mejs-chapter-block .ch-title
+{
+	font-size: 12px;
+	font-weight: bold;
+	display: block;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	margin: 0 0 3px;
+	line-height: 12px;
+}
+.mejs-chapters .mejs-chapter .mejs-chapter-block .ch-timespan
+{
+	font-size: 12px;
+	line-height: 12px;
+	margin: 3px 0 4px;
+	display: block;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.mejs-captions-layer
+{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+	line-height: 22px;
+	font-size: 12px;
+	color: #FFF;
+}
+.mejs-captions-layer A
+{
+	color: #FFF;
+	text-decoration: underline;
+}
+.mejs-captions-layer[lang=ar]
+{
+	font-size: 20px;
+	font-weight: normal;
+}
+.mejs-captions-position
+{
+	position: absolute;
+	width: 100%;
+	bottom: 15px;
+	left: 0;
+}
+.mejs-captions-position-hover
+{
+	bottom: 45px;
+}
+.mejs-captions-text
+{
+	padding: 3px 5px;
+	background: url(./../images/background.png);
+	background: rgba(20, 20, 20, 0.8);
+}
+.mejs-clear
+{
+	clear: both;
+}
+.me-cannotplay A
+{
+	color: #FFF;
+	font-weight: bold;
+}
+.me-cannotplay SPAN
+{
+	padding: 15px;
+	display: block;
+}
+.mejs-controls .mejs-loop-off BUTTON
+{
+	background-position: -64px -16px;
+}
+.mejs-controls .mejs-loop-on BUTTON
+{
+	background-position: -64px 0;
+}
+.mejs-controls .mejs-backlight-off BUTTON
+{
+	background-position: -80px -16px;
+}
+.mejs-controls .mejs-backlight-on BUTTON
+{
+	background-position: -80px 0;
+}
+.mejs-controls .mejs-picturecontrols-button
+{
+	background-position: -96px 0;
+}
